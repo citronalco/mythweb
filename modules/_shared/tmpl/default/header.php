@@ -106,8 +106,8 @@ EOF;
     }
     else
     {
-        print "<script type=\"text/javascript\" src=\"js/ajax/libs/prototype/1.7.3.0/prototype.js\"></script>";
-        print "<script type=\"text/javascript\" src=\"js/ajax/libs/jquery/3.2.1/jquery.min.js\"></script>";
+        print "<script type=\"text/javascript\" src=\"js/prototype.js\"></script>";
+        print "<script type=\"text/javascript\" src=\"js/jquery-3.2.1.min.js\"></script>";
     }
 ?>
 

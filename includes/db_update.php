@@ -61,7 +61,7 @@
                 setting('WebDBSchemaVer',    null, ++$db_vers, false);
 
             case 4:
-                setting('mythweb_use_cdn', null, true);
+                setting('mythweb_use_cdn', null, false);
                 setting('WebDBSchemaVer',    null, ++$db_vers, false);
 				
         // All other numbers should run their changes sequentially
