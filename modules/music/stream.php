@@ -95,7 +95,8 @@
     }
 // Otherwise, send it via the backend
     else {
-        $Master_Host = setting('MasterServerIP');
+        $Master_Host _or(preg_replace('@(.*?:.*)@', "[$1]",
+                         setting('MasterServerName')), "127.0.0.1");
         $port = _or(get_backend_setting('BackendStatusPort', $Master_Host),
                     get_backend_setting('BackendStatusPort'));
         if (stripos($Master_Host,':') !== false) {
